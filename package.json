@@ -34,7 +34,7 @@
     "eslint-plugin-qwik": "1.5.1",
     "prettier": "3.2.5",
     "typescript": "5.4.2",
-    "undici": "6.7.0",
+    "undici": "6.7.1",
     "vite": "5.1.5",
     "vite-tsconfig-paths": "4.3.1"
   }
