@@ -52,25 +52,29 @@ export default component$(() => {
       <div class={styles.gettingstarted}>
         <div
           class={styles.intro}
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
           dangerouslySetInnerHTML={
             GETTING_STARTED_STEPS[gettingStartedStep.value].message
           }
         />
         <span
           class={styles.hint}
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
           dangerouslySetInnerHTML={
             GETTING_STARTED_STEPS[gettingStartedStep.value].hint
           }
         />
       </div>
       {gettingStartedStep.value + 1 < GETTING_STARTED_STEPS.length ? (
-        <button class="button-dark" onClick$={() => gettingStartedStep.value++}>
+        <button type="button" class="button-dark" onClick$={() => gettingStartedStep.value++}>
           Continue with Step {gettingStartedStep.value + 2} of{" "}
           {GETTING_STARTED_STEPS.length}
         </button>
       ) : (
         <button
+          type="button"
           class="button-dark"
+          // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
           onClick$={() => (gettingStartedStep.value = 0)}
         >
           Re-Start

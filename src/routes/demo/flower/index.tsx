@@ -16,7 +16,9 @@ export default component$(() => {
     number: 20,
   });
 
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(({ cleanup }) => {
+    // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
     const timeout = setTimeout(() => (state.count = 1), 500);
     cleanup(() => clearTimeout(timeout));
 
@@ -26,7 +28,7 @@ export default component$(() => {
 
   return (
     <div class="container container-center">
-      <div role="presentation" class="ellipsis"></div>
+      <div role="presentation" class="ellipsis" />
       <h1>
         <span class="highlight">Generate</span> Flowers
       </h1>
@@ -51,6 +53,7 @@ export default component$(() => {
       >
         {Array.from({ length: state.number }, (_, i) => (
           <div
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             key={i}
             class={{
               square: true,

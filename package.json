@@ -1,13 +1,25 @@
 {
-  "name": "my-qwik-basic-starter",
   "description": "Demo App with Routing built-in (recommended)",
-  "engines": {
-    "node": ">=15.0.0"
+  "devDependencies": {
+    "@builder.io/qwik": "1.5.5",
+    "@builder.io/qwik-city": "1.5.5",
+    "@types/eslint": "8.56.10",
+    "@types/node": "20.13.0",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-qwik": "1.5.5",
+    "prettier": "3.3.0",
+    "typescript": "5.4.5",
+    "undici": "6.18.2",
+    "vite": "5.2.12",
+    "vite-tsconfig-paths": "4.3.2"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "name": "my-qwik-basic-starter",
   "private": true,
-  "trustedDependencies": [
-    "sharp"
-  ],
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
@@ -23,19 +35,7 @@
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },
-  "devDependencies": {
-    "@builder.io/qwik": "1.5.5",
-    "@builder.io/qwik-city": "1.5.5",
-    "@types/eslint": "8.56.10",
-    "@types/node": "20.13.0",
-    "@typescript-eslint/eslint-plugin": "7.11.0",
-    "@typescript-eslint/parser": "7.11.0",
-    "eslint": "8.57.0",
-    "eslint-plugin-qwik": "1.5.5",
-    "prettier": "3.3.0",
-    "typescript": "5.4.5",
-    "undici": "6.18.2",
-    "vite": "5.2.12",
-    "vite-tsconfig-paths": "4.3.2"
-  }
+  "trustedDependencies": [
+    "sharp"
+  ]
 }

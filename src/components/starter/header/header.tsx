@@ -16,6 +16,7 @@ export default component$(() => {
             <a
               href="https://qwik.builder.io/docs/components/overview/"
               target="_blank"
+              rel="noreferrer"
             >
               Docs
             </a>
@@ -24,6 +25,7 @@ export default component$(() => {
             <a
               href="https://qwik.builder.io/examples/introduction/hello-world/"
               target="_blank"
+              rel="noreferrer"
             >
               Examples
             </a>
@@ -32,6 +34,7 @@ export default component$(() => {
             <a
               href="https://qwik.builder.io/tutorial/welcome/overview/"
               target="_blank"
+              rel="noreferrer"
             >
               Tutorials
             </a>

@@ -5,7 +5,8 @@ export const QwikLogo = ({
   width?: number;
   height?: number;
 }) => (
-  <svg
+  // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+<svg
     width={width}
     height={height}
     viewBox="0 0 167 53"

@@ -14,6 +14,7 @@ export default component$(() => {
       <p>Have fun building your App with Qwik.</p>
       <div class={styles["button-group"]}>
         <button
+          type="button"
           onClick$={async () => {
             const defaults = {
               spread: 360,
@@ -29,14 +30,18 @@ export default component$(() => {
             };
 
             function loadConfetti() {
+              // biome-ignore lint/suspicious/noExplicitAny: <explanation>
               return new Promise<(opts: any) => void>((resolve, reject) => {
+                // biome-ignore lint/suspicious/noExplicitAny: <explanation>
                 if ((globalThis as any).confetti) {
+                  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
                   return resolve((globalThis as any).confetti as any);
                 }
                 const script = document.createElement("script");
                 script.src =
                   "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
                 script.onload = () =>
+                  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
                   resolve((globalThis as any).confetti as any);
                 script.onerror = reject;
                 document.head.appendChild(script);
@@ -73,6 +78,7 @@ export default component$(() => {
           href="https://qwik.builder.io/docs"
           target="_blank"
           class="button button-dark"
+          rel="noreferrer"
         >
           Explore the docs
         </a>
