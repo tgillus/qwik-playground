@@ -1,19 +1,19 @@
 {
   "description": "Demo App with Routing built-in (recommended)",
   "devDependencies": {
-    "@builder.io/qwik": "1.5.7",
-    "@builder.io/qwik-city": "1.5.7",
-    "@types/eslint": "8.56.10",
+    "@builder.io/qwik": "1.8.0",
+    "@builder.io/qwik-city": "1.8.0",
+    "@types/eslint": "9.6.0",
     "@types/node": "20.14.8",
-    "@typescript-eslint/eslint-plugin": "7.13.1",
-    "@typescript-eslint/parser": "7.13.1",
+    "@typescript-eslint/eslint-plugin": "8.1.0",
+    "@typescript-eslint/parser": "8.1.0",
     "eslint": "8.57.0",
-    "eslint-plugin-qwik": "1.5.7",
-    "prettier": "3.3.2",
-    "typescript": "5.5.2",
-    "undici": "6.19.2",
-    "vite": "5.3.1",
-    "vite-tsconfig-paths": "4.3.2"
+    "eslint-plugin-qwik": "1.8.0",
+    "prettier": "3.3.3",
+    "typescript": "5.5.4",
+    "undici": "6.19.7",
+    "vite": "5.4.1",
+    "vite-tsconfig-paths": "5.0.1"
   },
   "engines": {
     "node": ">=18"
